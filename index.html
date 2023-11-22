@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library</title>
+</head>
+<body>
+    <button id="new-book-btn">New Book</button>
+    <form id="new-book-form" action="" style="display: none;">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+        </div>
+        <div>
+            <label for="pages">Pages: </label>
+            <input type="number" id="pages">
+        </div>
+        <div class="form-checkbox">
+            <label for="checkbox">Read</label>
+            <input type="checkbox" id="read">
+        </div>
+        <input class="submit-btn" type="submit" value="Add Book">
+
+    </form>
+    <div id="library"></div>
+    <script src="books.js"></script>
+</body>
+</html>
